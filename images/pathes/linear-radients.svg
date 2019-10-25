@@ -1,0 +1,10 @@
+<svg>
+    <linearGradient id="gradient-1" x1="786" y1="-1.01744e-05" x2="3.19156e-05" y2="889" gradientUnits="userSpaceOnUse">
+        <stop stop-color="#FF47BD" stop-opacity="0"/>
+        <stop offset="1" stop-color="#B969FF"/>
+    </linearGradient>
+    <linearGradient id="gradient-2" x1="-505" y1="1140" x2="502.786" y2="-1.07213" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2D0085"/>
+      <stop offset="1" stop-color="#720094"/>
+    </linearGradient>
+</svg>
