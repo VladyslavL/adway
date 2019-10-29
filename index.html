@@ -27,6 +27,10 @@
           <stop stop-color="#2D0085"/>
           <stop offset="1" stop-color="#720094"/>
         </linearGradient>
+        <linearGradient id="gradient-3" x1="-390" y1="889" x2="396" y2="2.68102e-05" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#FF47BD"/>
+          <stop offset="1" stop-color="#B969FF"/>
+        </linearGradient>
     </svg>
   </div>
 
@@ -56,51 +60,106 @@
         </div>
       </div>
 
-      <img src="images/persons/person-1.png" alt="" class="hero__person">
-    </div>
 
-    <nav class="nav">
-      <div class="container">
-        <div class="nav__content">
-          <a href="/" class="nav__logo" area-label="Link to the home page">
-            <img src="images/icons/logo.svg" width="149" height="20" alt="">
-          </a>
-
-          <div class="d-flex align-items-center">
-            <select name="" id="" class="lang_switcher" aria-label="Language switcher">
-              <option value="">English (UK)</option>
-              <option value="">Swedish (SW)</option>
-            </select>
-            
-            <a href="#" class="btn btn--sm btn--clear nav__signup">
-              <div class="btn__content">Sign up</div>
-            </a>
+      <div class="hero__person d-none d-desktop-block">
+        <img src="images/persons/person-2.png" alt="" class="">
+        <div id="scene-2">
+          <div data-depth="0.12">
+            <figure  class="figure__hexagon figure__hexagon--type-4">
+              <svg viewBox="0 0 786 889">
+                <use xlink:href="#figure-hexagon"></use>
+              </svg>
+            </figure>
           </div>
         </div>
       </div>
-    </nav>
 
-    <div class="hero__content">
-      <div class="container">
-        <h1 class="hero__content-header h1">One-to-One Consultation</h1>
-        <h2 class="hero__content-subheader h2">Lead with your Employer Brand and attract the next generation through the art of marketing.</h2>
-        <a href="#" class="btn">
-          <div class="btn__content">SCHEDULE A TIME</div>
-        </a>
-      </div>
+      
     </div>
 
+    <div class="hero__mask d-flex flex-column justify-content-between">
+      <nav class="nav">
+        <div class="container">
+          <div class="nav__content">
+            <a href="/" class="nav__logo" area-label="Link to the home page">
+              <img src="images/icons/logo.svg" alt="">
+            </a>
 
-    <div class="hero__bar">
-      <div class="container">
-        <h3 class="hero__bar-header">Trusted by the world’s most innovative businesses.</h3>
-        <div class="hero__bar-list d-flex">
-          <div class="d-flex">
-            <div><img src="images/icons/icon-client_1.svg" alt=""></div>
-            <div><img src="images/icons/icon-client_2.svg" alt=""></div>
-            <div><img src="images/icons/icon-client_3.svg" alt=""></div>
-            <div><img src="images/icons/icon-client_4.svg" alt=""></div>
-            <div><img src="images/icons/icon-client_5.svg" alt=""></div>
+            <div class="d-desktop-none" data-micromodal-trigger="modal-nav">
+              <img src="images/icons/icon-burger.svg" alt="">
+            </div>
+
+            <div class="d-none d-desktop-flex align-items-center">
+              <select name="" id="" class="lang_switcher" aria-label="Language switcher">
+                <option value="">English (UK)</option>
+                <option value="">Swedish (SW)</option>
+              </select>
+              
+              <button class="btn btn--sm btn--outline" data-micromodal-trigger="modal">
+                <div class="btn__content">Sign up</div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <div class="hero__content container">
+        <div class="hero__content-box">
+          <h1 class="hero__content-header h1">One-to-One Consultation</h1>
+          <h2 class="hero__content-subheader h2">Lead with your Employer Brand and attract the next generation through the art of marketing.</h2>
+
+          <div class="hero__content-list">
+            <h4 class="h2">What you will learn?</h4>
+            <ul>
+              <li class="d-flex align-items-center">
+                <div>
+                  <img src="images/icons/icon-check.svg" alt="">
+                </div>
+
+                <p>Lorem Ipsum is simply dummy text</p>
+              </li>
+              <li class="d-flex align-items-center">
+                <div>
+                  <img src="images/icons/icon-check.svg" alt="">
+                </div>
+
+                <p>Lorem Ipsum is simply dummy text</p>
+              </li>
+              <li class="d-none d-desktop-flex align-items-center">
+                <div>
+                  <img src="images/icons/icon-check.svg" alt="">
+                </div>
+
+                <p>Lorem Ipsum is simply dummy text</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero__content-person d-flex align-items-center d-desktop-none">
+            <div>
+              <img src="images/persons/person-2--mobile@2x.png" alt="" width="60px" height="60px">
+            </div>
+            <p>Timothy Strøm-Pedersen,  Country Manager Norway hos Adway AI</p>
+          </div>
+
+          <button class="btn btn--lg" data-micromodal-trigger="modal">
+            <div class="btn__content">SCHEDULE A TIME</div>
+          </button>
+        </div>
+      </div>
+
+
+      <div class="hero__bar">
+        <div class="container">
+          <h3 class="hero__bar-header">Trusted by the world’s most innovative businesses.</h3>
+          <div class="hero__bar-list d-flex">
+            <div class="d-flex">
+              <div><img src="images/icons/icon-client_1.svg" alt=""></div>
+              <div><img src="images/icons/icon-client_2.svg" alt=""></div>
+              <div><img src="images/icons/icon-client_3.svg" alt=""></div>
+              <div><img src="images/icons/icon-client_4.svg" alt=""></div>
+              <div><img src="images/icons/icon-client_5.svg" alt=""></div>
+            </div>
           </div>
         </div>
       </div>
@@ -112,7 +171,7 @@
       <div class="footer__content d-desktop-flex flex-wrap">
         <div class="footer__desc">
           <a href="#" class="footer__logo" area-label="Link to the home page">
-            <img src="images/icons/logo.svg" alt="" width="149" height="20">
+            <img src="images/icons/logo.svg" alt="">
           </a>
 
           <p>Lead with your Employer Brand and attract the next generation through the art of marketing.</p>
@@ -166,15 +225,174 @@
     </div>
   </footer>
 
+  <div class="modal modal__form micromodal-slide" id="modal" area-hidden="true">
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close="modal">
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <div class="modal__bg">
+          <figure class="figure__hexagon">
+            <svg viewBox="0 0 786 889">
+              <use xlink:href="#figure-hexagon"></use>
+            </svg>
+          </figure>
+        </div>
+        <nav class="nav">
+          <div class="container">
+            <div class="nav__content">
+              <a href="/" class="nav__logo" tabindex="-1" area-label="Link to the home page">
+                <img src="images/icons/logo.svg" alt="">
+              </a>
+    
+              <div class="cursor-pointer" aria-label="Close modal" data-micromodal-close="modal">
+                <img src="images/icons/icon-close.svg" alt="" data-micromodal-close="modal">
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="modal__body">
+          <h1 class="modal__header modal__header--underline">Let’s get started!</h1>
+
+          <form id="form" class="modal__form">
+            <div class="field">
+              <label for="" class="modal__label">What’s your company name?*</label>
+              <input class="modal__input" name="name" type="text" placeholder=" " required>
+            </div>
+            <div class="field">
+              <label for="" class="modal__label">What’s your email?*</label>
+              <input class="modal__input" name="email" type="email" placeholder=" " required>
+            </div>
+            <div class="field">
+              <label for="" class="modal__label">What’s your phone number?*</label>
+              <input class="modal__input" name="phone" type="tel" placeholder=" " required>
+            </div>
+            <div class="field">
+              <label for="" class="modal__label">No. of employees?*</label>
+
+              <div class="checkboxes">
+                <div class="checkbox__mask">
+                  <input type="radio" name="employees" id="e1" value="0-500" class="checkbox__input">
+                  <label for="e1" class="checkbox__label">0-500</label>
+                </div>
+                <div class="checkbox__mask">
+                  <input type="radio" name="employees" id="e2" value="500-1000" class="checkbox__input">
+                  <label for="e2" class="checkbox__label">500-1000</label>
+                </div>
+                <div class="checkbox__mask">
+                  <input type="radio" name="employees" id="e3" value="1000-5000" class="checkbox__input">
+                  <label for="e3" class="checkbox__label">1000-5000</label>
+                </div>
+                <div class="checkbox__mask">
+                  <input type="radio" name="employees" id="e4" value="5000-10000" class="checkbox__input">
+                  <label for="e4" class="checkbox__label">5000-10000</label>
+                </div>
+                <div class="checkbox__mask">
+                  <input type="radio" name="employees" id="e5" value="10000+" class="checkbox__input">
+                  <label for="e5" class="checkbox__label">10000+</label>
+                </div>
+              </div>
+            </div>
+            <div class="field field--buttons text-center">
+              <div class="success-msg">
+                <h4 class="success-msg__header">thank you!</h4>
+                <p class="success-msg__body">Your submission has been received.</p>
+              </div>
+              <button type="submit" class="btn btn--md">
+                <div class="btn__content">Send</div>
+              </button>
+              <div></div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal modal__nav micromodal-slide" id="modal-nav" area-hidden="true" hidden>
+    <div class="modal__overlay" tabindex="-1" data-micromodal-close="modal">
+      <div class="modal__container" role="dialog" aria-modal="true">
+        <nav class="nav">
+          <div class="container">
+            <div class="nav__content">
+              <a href="/" class="nav__logo" tabindex="-1" area-label="Link to the home page">
+                <img src="images/icons/logo.svg" alt="">
+              </a>
+    
+              <div aria-label="Close modal" data-micromodal-close="modal-nav">
+                <img src="images/icons/icon-close.svg" alt="" data-micromodal-close="modal-nav">
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="modal__body d-flex flex-column justify-content-between">
+          <div></div>
+          <div class="modal__nav-list">
+            <a href="https://www.adway.ai/about/">About</a>
+            <a href="https://www.adway.ai/career/">Career</a>
+            <a href="#">Contact</a>
+
+            <button id="modal-sign-up-btn" class="btn btn--lg">
+              <div class="btn__content">Sign Up</div>
+            </button>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <select name="" id="" class="lang_switcher" aria-label="Language switcher">
+              <option value="">English (UK)</option>
+              <option value="">Swedish (SW)</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
   <script>
     var scene = document.getElementById('scene');
+    var scene2 = document.getElementById('scene-2');
     var parallaxInstance = new Parallax(scene,{
       onReady: function(){
         scene.classList.add('ready')
       }
     });
+    var parallaxInstance = new Parallax(scene2);
+
+    MicroModal.init({
+      disableScroll: true,
+      disableFocus: true,
+      awaitOpenAnimation: true
+    });
+
+    document.getElementById("modal-sign-up-btn").addEventListener('click', function(e){
+      MicroModal.close('modal-nav');
+      MicroModal.show('modal'); 
+    })
+
+    var Form = document.getElementById('form');
+    Form.onsubmit = function(event) {
+      event.preventDefault();
+
+      var request = new XMLHttpRequest();
+      // POST to httpbin which returns the POST data as JSON
+      request.open('POST', 'https://hooks.zapier.com/hooks/catch/5963677/ou04mda/', true);
+
+      var formData = new FormData(document.getElementById('form'));
+
+      request.onload = function(){
+        if(request.status === 200){
+          Form.classList.add('success');
+          console.log('success');
+        }else{
+          Form.classList.add('error');
+          console.log('error');
+        }
+      }
+
+      request.send(formData);
+
+      Form.reset();
+    }
   </script>
 </body>
 </html>

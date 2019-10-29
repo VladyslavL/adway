@@ -1,0 +1,35 @@
+.nav{
+  --content_padding: 2rem 0;
+  width: 100%;
+  z-index: var(--z-index__nav);
+  &__logo{
+    img{
+      width: 10rem;
+    }
+  }
+  &__content{
+    box-sizing: border-box;
+    padding: var(--content_padding);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(#fff,.1);
+  }
+
+  .lang_switcher{
+    position: absolute;
+    top: calc(100% + 1rem);
+    right: 2rem;
+  }
+}
+
+@media screen and (min-width: 560px){
+  .nav{
+    --content_padding: 3rem 0;
+    &__logo{
+      img{
+        width: 15rem;
+      }
+    }
+  }
+}

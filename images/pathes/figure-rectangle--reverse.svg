@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="2560px" height="200px" viewBox="0 0 2560 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>figure-rectangle</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 2560 0 2560 200 0 200"></polygon>
+        <linearGradient x1="-1.24674358%" y1="49.7229901%" x2="54.8128024%" y2="51.076844%" id="linearGradient-3">
+            <stop stop-color="#6F0A98" offset="0%"></stop>
+            <stop stop-color="#57048F" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="figure-rectangle" transform="translate(1280.000000, 100.000000) scale(-1, 1) translate(-1280.000000, -100.000000) ">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Path"></g>
+            <path d="M199.769,13.1859 C214.883,4.54516 231.991,0 249.401,0 L2560,0 L2560,200 L-127,200 L199.769,13.1859 Z" id="Path" fill="url(#linearGradient-3)" fill-rule="nonzero" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>

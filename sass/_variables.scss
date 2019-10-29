@@ -1,0 +1,13 @@
+*{
+  --z-index__hero-bg: 1;
+  --z-index__figure-1: 1;
+  --z-index__figure-2: 2;
+  --z-index__figure-3: 4;
+  --z-index__person: 3;
+  --z-index__content: 5;
+  --z-index__nav: 6;
+  --z-index__bar: 6;
+  --z-index__modal: 1000;
+  --responsive_fz: calc((var(--min-font) * 1px) + (var(--max-font) - var(--min-font)) * ((100vw - 320px) / (1920 - 320)));
+  --responsive_lh: calc((var(--min-line_height) * 1px) + (var(--max-line_height) - var(--min-line_height)) * ((100vw - 320px) / (1920 - 320)));
+}

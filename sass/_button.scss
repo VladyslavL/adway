@@ -1,0 +1,86 @@
+.btn{
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  font-family: inherit;
+  border: none;
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-radius: 5rem;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transition: opacity .15s ease-in;
+  cursor: pointer;
+  padding: var(--btn_padding);
+  background: transparent;
+  outline: none;
+  
+  &:not(.btn--clear)::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(158.11deg, #FF47BD 0%, #B969FF 100%);
+    transition: all .15s ease-in;
+    z-index: -1;
+  }
+  .btn__content{
+    position: relative;
+  }
+  &:hover{
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  &--sm{
+    --btn_padding: 1.25rem 2rem;
+    font-size: 1.2rem;
+  }
+  &--md{
+    --btn_padding: 1.8rem 2rem;
+    font-size: 1.4rem;
+  }
+  &--lg{
+  --btn_padding: 1.8rem 2.4rem;
+    letter-spacing: 1.71px;
+    line-height: 1;
+  }
+
+  &--outline{
+    background-image: url(../images/icons/icon-btn_bg.svg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    &::before{
+      opacity: 0;
+    }
+    &:hover{
+      opacity: 1;
+      &::before{
+        opacity: 1;
+      }
+    }
+    &.btn--sm{
+      padding: 1.35rem 2.1rem;
+    }
+  }
+
+  &--clear{
+    opacity: 0.5;
+    &:hover{
+      opacity: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 560px) {
+  .btn{
+    &--lg{
+      font-size: 1.8rem;
+      --btn_padding: 2.4rem 4.8rem;
+    }
+  }
+}
