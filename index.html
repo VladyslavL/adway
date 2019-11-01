@@ -132,7 +132,7 @@
             <p>Timothy Strøm-Pedersen,  Country Manager Norway hos Adway AI</p>
           </div>
 
-          <button id="CTA" class="btn btn--lg" data-micromodal-trigger="modal">
+          <button id="CTA" class="btn btn--lg">
             <div class="btn__content">SCHEDULE A TIME</div>
           </button>
         </div>
@@ -356,11 +356,17 @@
 
     document.getElementById("modal-sign-up-btn").addEventListener('click', function(e){
       MicroModal.close('modal-nav');
-      MicroModal.show('modal'); 
+      MicroModal.show('modal', {
+        disableScroll: true,
+        disableFocus: false
+      }); 
     })
 
     document.getElementById("CTA").addEventListener('click', function(e){
-      MicroModal.show('modal'); 
+      MicroModal.show('modal',{
+        disableScroll: true,
+        disableFocus: false
+      }); 
     })
 
     var Form = document.getElementById('form');
