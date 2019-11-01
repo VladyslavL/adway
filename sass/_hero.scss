@@ -201,25 +201,6 @@
         max-width: 80vw;
         min-width: 42.6rem;
       }
-      
-      #scene-2{
-        z-index: 3;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        transition: opacity .5s ease-in;
-        animation: wave 7.11111s 0.1s infinite linear;
-        & > div{
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;
-        }
-      }
-      
     }
 
     &__content{
@@ -269,10 +250,6 @@
           margin-left: 3rem;
         }
       }
-    }
-    &__person{
-      left: auto;
-      right: 55%;
     }
   }
 }

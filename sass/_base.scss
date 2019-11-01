@@ -144,6 +144,10 @@ select.lang_switcher{
   line-height: 2rem;
   background: url(../images/icons/icon-globe.svg) no-repeat left center,
               url(../images/icons/icon-chevron.svg) no-repeat right center;
+
+  option{
+    color: #000
+  }
 }
 
 .text-center{

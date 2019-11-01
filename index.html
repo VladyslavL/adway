@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
   <meta name="Description" content="Trusted by the world’s most innovative businesses.">
@@ -26,10 +26,6 @@
         <linearGradient id="gradient-2" x1="-505" y1="1140" x2="502.786" y2="-1.07213" gradientUnits="userSpaceOnUse">
           <stop stop-color="#2D0085"/>
           <stop offset="1" stop-color="#720094"/>
-        </linearGradient>
-        <linearGradient id="gradient-3" x1="-390" y1="889" x2="396" y2="2.68102e-05" gradientUnits="userSpaceOnUse">
-          <stop stop-color="#FF47BD"/>
-          <stop offset="1" stop-color="#B969FF"/>
         </linearGradient>
     </svg>
   </div>
@@ -63,15 +59,6 @@
 
       <div class="hero__person d-none d-desktop-block">
         <img src="images/persons/person-2.png" alt="" class="">
-        <div id="scene-2">
-          <div data-depth="0.12">
-            <figure  class="figure__hexagon figure__hexagon--type-4">
-              <svg viewBox="0 0 786 889">
-                <use xlink:href="#figure-hexagon"></use>
-              </svg>
-            </figure>
-          </div>
-        </div>
       </div>
 
       
@@ -243,7 +230,7 @@
               </a>
     
               <div class="cursor-pointer" aria-label="Close modal" data-micromodal-close="modal">
-                <img src="images/icons/icon-close.svg" alt="" data-micromodal-close="modal">
+                <img src="images/icons/icon-close.svg" height="25px" alt="" data-micromodal-close="modal">
               </div>
             </div>
           </div>
@@ -317,7 +304,7 @@
               </a>
     
               <div aria-label="Close modal" data-micromodal-close="modal-nav">
-                <img src="images/icons/icon-close.svg" alt="" data-micromodal-close="modal-nav">
+                <img src="images/icons/icon-close.svg" height="25px" alt="" data-micromodal-close="modal-nav">
               </div>
             </div>
           </div>
@@ -350,13 +337,11 @@
   <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
   <script>
     var scene = document.getElementById('scene');
-    var scene2 = document.getElementById('scene-2');
     var parallaxInstance = new Parallax(scene,{
       onReady: function(){
         scene.classList.add('ready')
       }
     });
-    var parallaxInstance = new Parallax(scene2);
 
     MicroModal.init({
       disableScroll: true,
