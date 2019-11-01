@@ -44,7 +44,7 @@
     font-size: 1.4rem;
   }
   &--lg{
-  --btn_padding: 1.8rem 2.4rem;
+  --btn_padding:2.4rem;
     letter-spacing: 1.71px;
     line-height: 1;
   }
@@ -80,7 +80,7 @@
   .btn{
     &--lg{
       font-size: 1.8rem;
-      --btn_padding: 2.4rem 4.8rem;
+      letter-spacing: 1px;
     }
   }
 }

@@ -68,10 +68,10 @@ ul {
 
 .h1 {
   font-weight: 600;
-  --max-font: 72;
+  --max-font: 58;
   --min-font: 40;
   font-size: var(--responsive_fz);
-  --max-line_height: 80;
+  --max-line_height: 70;
   --min-line_height: 40;
   line-height: var(--responsive_lh);
 }
@@ -81,7 +81,7 @@ ul {
   font-weight: 300;
   letter-spacing: .35px;
   opacity: 0.7;
-  --max-font: 20;
+  --max-font: 18;
   --min-font: 16;
   font-size: var(--responsive_fz);
 }
@@ -243,7 +243,7 @@ select.lang_switcher option {
 }
 
 .btn--lg {
-  --btn_padding: 1.8rem 2.4rem;
+  --btn_padding:2.4rem;
   letter-spacing: 1.71px;
   line-height: 1;
 }
@@ -282,7 +282,7 @@ select.lang_switcher option {
 @media screen and (min-width: 560px) {
   .btn--lg {
     font-size: 1.8rem;
-    --btn_padding: 2.4rem 4.8rem;
+    letter-spacing: 1px;
   }
 }
 
@@ -339,8 +339,6 @@ select.lang_switcher option {
   opacity: 0;
   -webkit-transition: opacity .5s ease-in;
   transition: opacity .5s ease-in;
-  -webkit-animation: wave 7.11111s 0.1s infinite linear;
-          animation: wave 7.11111s 0.1s infinite linear;
 }
 
 .hero__bg #scene.ready {
@@ -422,9 +420,9 @@ select.lang_switcher option {
 
 .hero__content {
   --content__padding: 4.5rem 2rem 6rem 2rem;
-  --header__padding-bottom: 3rem;
+  --header__padding-bottom: 2rem;
   --subheader__padding-bottom: 3rem;
-  --list__padding: 2rem 0 3rem 0;
+  --list__padding: 2rem 0 4rem;
   --list-item__padding: 2rem;
   width: 100%;
   display: -webkit-box;
@@ -557,9 +555,8 @@ select.lang_switcher option {
 @media screen and (min-width: 991px) {
   .hero__content {
     --content__padding: 1rem 2rem 1rem 2rem;
-    --header__padding-bottom: 3rem;
-    --subheader__padding-bottom: 3rem;
-    --list__padding: 3rem 0;
+    --header__padding-bottom: 2rem;
+    --subheader__padding-bottom: 4rem;
   }
   .hero__content ul {
     font-size: 1.6rem;

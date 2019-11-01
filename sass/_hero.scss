@@ -11,7 +11,7 @@
       left: 0;
       opacity: 0;
       transition: opacity .5s ease-in;
-      animation: wave 7.11111s 0.1s infinite linear;
+      // animation: wave 7.11111s 0.1s infinite linear;
       &.ready{
         opacity: 1;
       }
@@ -88,9 +88,9 @@
 
   &__content{
     --content__padding: 4.5rem 2rem 6rem 2rem;
-    --header__padding-bottom: 3rem;
+    --header__padding-bottom: 2rem;
     --subheader__padding-bottom: 3rem;
-    --list__padding: 2rem 0 3rem 0;
+    --list__padding: 2rem 0 4rem;
     --list-item__padding: 2rem;
     width: 100%;
     display: flex;
@@ -221,9 +221,8 @@
   .hero{
     &__content{
       --content__padding: 1rem 2rem 1rem 2rem;
-      --header__padding-bottom: 3rem;
-      --subheader__padding-bottom: 3rem;
-      --list__padding: 3rem 0;
+      --header__padding-bottom: 2rem;
+      --subheader__padding-bottom: 4rem;
       ul{
         font-size: 1.6rem;
         line-height: 2rem;
