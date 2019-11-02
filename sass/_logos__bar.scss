@@ -1,0 +1,45 @@
+.logos__bar{
+  --bar-padding: 3rem;
+  width: 100%;
+  padding-top: var(--bar-padding);
+  padding-bottom: var(--bar-padding);
+  background: linear-gradient(111.01deg, #57048F -29.91%, #6F0A98 100%);
+  box-sizing: border-box;
+  &-header{
+    font-size: 1.4rem;
+    font-weight: normal;
+    opacity: 0.6;
+    letter-spacing: 0.35px;
+    line-height: 146.3%;
+    padding-bottom: 2rem;
+  }
+  &-list{
+    opacity: 0.7;
+    margin-right: -2rem;
+    & > div{
+      overflow: auto;
+      scrollbar-width: none;
+      &::-webkit-scrollbar { 
+        display: none; 
+      }
+    }
+    img{
+      margin-right: 3rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logos__bar{
+    --bar-padding: 4rem;
+    text-align: center;
+    &-list{
+      margin: 0 5rem;
+      justify-content: center;
+      img{
+        margin-right: 3rem;
+        margin-left: 3rem;
+      }
+    }
+  }
+}

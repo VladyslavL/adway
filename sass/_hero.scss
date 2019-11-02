@@ -11,7 +11,7 @@
       left: 0;
       opacity: 0;
       transition: opacity .5s ease-in;
-      animation: wave 7.11111s 0.1s infinite linear;
+      // animation: wave 7.11111s 0.1s infinite linear;
       &.ready{
         opacity: 1;
       }
@@ -50,39 +50,96 @@
     max-height: 114rem;
   }
 
-  
-
-  &__bar{
-    --bar-padding: 3rem;
+  &__events{
     width: 100%;
     z-index: var(--z-index__bar);
-    padding-top: var(--bar-padding);
-    padding-bottom: var(--bar-padding);
-    background-image: url(../images/pathes/figure-rectangle--reverse.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    &-header{
-      font-size: 1.4rem;
-      font-weight: normal;
-      opacity: 0.6;
-      letter-spacing: 0.35px;
-      line-height: 146.3%;
-      padding-bottom: 2rem;
-    }
-    &-list{
-      opacity: 0.7;
-      margin-right: -2rem;
-      & > div{
-        overflow: auto;
-        scrollbar-width: none;
-        &::-webkit-scrollbar { 
-          display: none; 
+    position: relative;
+    &-item{
+      display: block !important;
+      position: relative;
+      height: 20rem;
+      max-width: 32rem;
+      overflow: hidden;
+      color: inherit;
+      text-decoration: none;
+      &:hover{
+        .hero__events-item-image{
+          transform: scale(1.2) translateX(5%);
+          transition: transform 1s ease;
+          backface-visibility: hidden;
         }
       }
-      img{
-        margin-right: 3rem;
+      &-image{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+        transform: scale(1.2) translateX(0);
       }
+
+      .image-overlay{
+        background: linear-gradient(140.92deg, #FF47BD 0%, #B969FF 100%);
+        opacity: 0.2;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+      }
+
+      &-content{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: rgba(#000, .5);
+        padding: 2rem 3rem;
+        font-weight: 600;
+      }
+
+      &-date{
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        letter-spacing: 1px;
+      }
+
+      &-label{
+        padding: 1.2rem 2rem;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        line-height: 1;
+        letter-spacing: 1px;
+        border-radius: 5rem;
+        border: 2px solid #fff;
+        box-sizing: border-box;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+      }
+
+      &-title{
+        font-size: 3.2em;
+        line-height: 3.4rem;
+        padding-bottom: 2rem;
+      }
+
+      &-location{
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        line-height: 1;
+      }
+    }
+
+    .events__slider-buttons{
+      display: none;
     }
   }
 
@@ -208,7 +265,13 @@
         position: absolute;
         z-index: 2;
         left: 2rem;
-        bottom: 16rem;
+        bottom: 25rem;
+      }
+    }
+
+    &__events{
+      &-item{
+        max-width: 40rem;
       }
     }
 
@@ -229,7 +292,7 @@
 @media screen and (min-width: 991px) {
   .hero{
     &__content{
-      --content__padding: 1rem 2rem 1rem 2rem;
+      --content__padding: 1rem 2rem 6rem 2rem;
       --header__padding-bottom: 2rem;
       --subheader__padding-bottom: 4rem;
       ul{
@@ -239,6 +302,31 @@
       &-box{
         width: 48%;
         max-width: 60rem;
+      }
+    }
+    &__events{
+      .events__slider-buttons{
+        position: absolute;
+        bottom: 100%;
+        margin-bottom: 4rem;
+        right: 6rem;
+        display: flex;
+      }
+  
+      .events__slider-button{
+        background-color: transparent;
+        border: none;
+        outline: none;
+        padding: 0;
+        cursor: pointer;
+        opacity: 0.3;
+        transition: opacity .15s ease-in;
+        &:first-child{
+          margin-right: 2rem;
+        }
+        &:hover{
+          opacity: 1;
+        }
       }
     }
   }
@@ -264,7 +352,6 @@
       &-info{
         left: auto;
         right: 8rem;
-        bottom: 20rem;
       }
     }
   }
