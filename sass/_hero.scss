@@ -11,7 +11,7 @@
       left: 0;
       opacity: 0;
       transition: opacity .5s ease-in;
-      // animation: wave 7.11111s 0.1s infinite linear;
+      animation: wave 7.11111s 0.1s infinite linear;
       &.ready{
         opacity: 1;
       }

@@ -385,6 +385,8 @@ select.lang_switcher option {
   opacity: 0;
   -webkit-transition: opacity .5s ease-in;
   transition: opacity .5s ease-in;
+  -webkit-animation: wave 7.11111s 0.1s infinite linear;
+          animation: wave 7.11111s 0.1s infinite linear;
 }
 
 .hero__bg #scene.ready {
